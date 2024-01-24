@@ -1,5 +1,51 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-postcss-load-config (2.1.2+~cs6.0.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Yadd ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Modernize debian/watch
+    * Add ctype=nodejs to component(s)
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Use uscan checksum
+  * Install components in nodejs root dir
+  * New upstream version 2.1.2+~cs6.0.0
+  * Drop dependency to nodejs
+  * Add patch for cosmiconfig ≥ 7
+  * Enable upstream test (jest)
+
+ -- Yadd <yadd@debian.org>  Thu, 30 Dec 2021 15:05:39 +0100
+
+node-postcss-load-config (2.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * New upstream version 2.1.0
+  * Add CONTRIBUTING.md in docs
+  * Switch install to pkg-js-tools
+  * Remove node-postcss-load-options, node-postcss-load-plugins and
+    node-object-assign form dependencies
+  * Embed components: import-cwd and import-from
+  * Update VCS fields to salsa
+  * Update debian/copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 14 Aug 2019 08:38:40 +0200
+
+node-postcss-load-config (1.2.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #879743)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 25 Oct 2017 15:11:18 +0530

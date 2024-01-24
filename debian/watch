@@ -1,0 +1,19 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-postcss-load-config-$1/ \
+ https://github.com/michael-ciniawsky/postcss-load-config/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts=\
+ctype=nodejs,\
+component=import-cwd,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-import-cwd-$1/ \
+ https://github.com/sindresorhus/import-cwd/tags .*/archive/.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+ctype=nodejs,\
+component=import-from,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-import-from-$1/ \
+ https://github.com/sindresorhus/import-from/tags .*/archive/.*/v?([\d\.]+).tar.gz checksum
